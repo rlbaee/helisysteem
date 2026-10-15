@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helisüsteemi juhend</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside>
+        <p class="brand">AV süsteemi juhend</p>
+        <p class="brand-sub">Jõhvi eesti</p>
+
+        <p class="nav-label">Sisukord</p>
+        <nav aria-label="Sisukord">
+          <ul>
+            <li>
+              <a href="#enne" data-link
+                ><span class="num">1</span>Enne koosolekut</a
+              >
+            </li>
+            <li>
+              <a href="#ajal" data-link
+                ><span class="num">2</span>Koosoleku ajal</a
+              >
+            </li>
+            <li>
+              <a href="#parast" data-link
+                ><span class="num">3</span>Pärast koosolekut</a
+              >
+            </li>
+            <li>
+              <a href="#probleemid" data-link
+                ><span class="num">4</span>Kui midagi ei tööta</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="theme-btn"
+          id="themeToggle"
+          type="button"
+          aria-label="Vaheta teemat"
+          title="Vaheta teemat"
+        >
+          <span class="theme-icon" aria-hidden="true">☾</span>
+          <span class="theme-label">Vaheta teemat</span>
+        </button>
+      </aside>
+
+      <main>
+        <div class="hero">
+          <h1>Jõhvi eesti AV juhend</h1>
+          <p>
+            Juhend vendadele, kes kasutavad Jõhvi saalis audio- videosüsteemi
+            kasutades M3 programmi.
+          </p>
+        </div>
+
+        <section id="enne">
+          <h2>Enne koosolekut</h2>
+          <p class="lead">Tee need toimingud enne, kui koosolek algab.</p>
+
+          <div class="card subsection first">
+            <h3>Esialgse seadistamine</h3>
+            <ol class="steps">
+              <li>
+                Lülita arvuti sisse ja kontrolli et monitorid töötavad
+                <br />
+                Kui <strong>monitorid ei tööta</strong>, siis vaata seda linki
+                <a href="#probleemid">probleemide lahendamiseks</a>
+              </li>
+              <li>
+                Kontrolli, et M3 programm on avatud ja töötab (aastateksti on
+                monitoridel näha)
+              </li>
+              <li>
+                Ava OBS programm ja vajuta nupule
+                <strong>Käivita virtuaalne kaamera</strong>
+                <div class="image">
+                  <img src="images/enablevirtualcam.png" />
+                  <p class="image-caption">
+                    Virtuaalse kaamera käivitamine OBS programmis
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="card subsection zoom" id="zoomi-seadistamine">
+            <h3>Zoomi seadistamine</h3>
+            <ol class="steps">
+              <li>Ava Zoomi programm ja käivita videokonverents</li>
+              <li>Kontrolli, et video ja mikrofon oleksid sees</li>
+              <li>
+                Seadista load osalejate jaoks. Järgi järgmisi samme:
+                <ul>
+                  <li>
+                    Vajuta nupule <strong>More</strong>
+                    Zoomi all paremas nurgas.
+                  </li>
+                  <li>
+                    Seadista nagu pildil näidatud
+                    <div class="image">
+                      <img src="images/zoom1.png" />
+                      <p class="image-caption">
+                        Zoomi seadistamine osalejate jaoks
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    Edasi vajuta nupule
+                    <strong>Host tools for participants</strong>
+                  </li>
+                  <li>
+                    Seadista nagu pildil
+                    <div class="image">
+                      <img src="images/zoom2.png" />
+                      <p class="image-caption">
+                        Zoomi seadistamine osalejate jaoks
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <div class="card subsection music zoom">
+            <h3>Muusika käivitamine</h3>
+            <ol class="steps">
+              <li>M3 programmis vajuta muusikaikoonile</li>
+              <li>Vajuta nupule <strong>Esita muusikat</strong></li>
+              <li>
+                Seadiste helitugevust, et muusikat oleks kuulda, kuid et ta ei
+                segaks suhtlemist.
+              </li>
+            </ol>
+            <div class="image">
+              <img src="images/music.png" />
+              <p class="image-caption">Muusika käivitamine M3 programmis</p>
+            </div>
+          </div>
+
+          <div class="card subsection zoomparticipants zoom">
+            <h3>Zoomi osalejate näitamine</h3>
+
+            <div class="info">
+              Kui tead, et sellel koosolekul on osasid Zoomist, siis vaata seda
+              osa. Kui ei ole, võid selle vahele jätta. Tee järgmisi samme enne
+              koosolekut.
+            </div>
+
+            <ol class="steps">
+              <li>M3 programmis vajuta ekraani ikoonile.</li>
+              <li>
+                Vajuta nupule <strong>Peida meedia kuvamine</strong>
+                <div class="image">
+                  <img src="images/peidameedia.png" />
+                  <p class="image-caption">Meedia peitmine</p>
+                </div>
+              </li>
+              <li>
+                Kontrolli, et teine Zoomi aken on täielikult nähtav. Võid
+                vajutada selle peale kiiresti kaks korda, et see suureks läheks.
+              </li>
+              <li>
+                Pane aastatekst tagasi kasutades varasemat
+                <strong>Peida meedia kuvamine</strong> nuppu.
+                <div class="info">
+                  <p>
+                    Kui tahad näidata Zoomi osalejaid, vajuta
+                    <strong>Peida meedia kuvamine</strong> nuppu koosoleku ajal.
+                    Näha on korraga ühte inimest. Ära unusta panna aastatekst
+                    tagasi peale osa lõppu!
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="ajal">
+          <h2>Koosoleku ajal</h2>
+          <p class="lead">Toimingud, mida teed koosoleku käigus.</p>
+
+          <div class="card subsection pildidvideod zoom">
+            <h3>Piltide ja videote näitamine</h3>
+            <ol class="steps">
+              <li>
+                Piltide või videote näitamiseks vajuta mängimise
+                <strong>▶</strong> nupule M3 programmis selle pildi või video
+                juures, mida soovid näidata.
+              </li>
+              <li>
+                Kui soovid jätta pildi ekraanidele, kuid peita seda Zoomis,
+                vajuta kaamera ikoonile sealsamas.
+              </li>
+              <li>
+                Kui soovid lõpetada näitamise, vajuta valge ruudu ⬜ nupule.
+                <div class="info">
+                  Videote puhul pole väljalülitamist isegi vaja, M3 lõpetab
+                  automaatselt video näitamise, kui see on lõppenud.
+                </div>
+              </li>
+            </ol>
+
+            <div class="image">
+              <img src="images/showingmedia.png" />
+              <p class="image-caption">
+                Piltide ja videote näitamine M3 programmis
+              </p>
+            </div>
+          </div>
+
+          <div class="card subsection lisamine zoom">
+            <h3>Piltide ja videote lisamine</h3>
+            <p>
+              Mõnikord pole M3 prorogrammis kohe videot või pilti, mida tahad
+              näidata. M3 programm lubab lisada palju erinevat tüüpi meediat.
+            </p>
+            <ol class="steps">
+              <li>Mõtle mis koosoleku osa vajab pilti või videot.</li>
+              <li>
+                Vajuta pluss ikoonile selle osa paremas ülemises nurgas.
+                <div class="image">
+                  <img src="images/addmedia.png" />
+                  <p class="image-caption">Meedia lisamis nupp M3 programmis</p>
+                </div>
+              </li>
+              <li>Vali mis tüüpi meediat soovid lisada.</li>
+              <li>
+                Allpool on kaks videot mis näitavad kuidas lisada pilte ja
+                videoid.
+              </li>
+            </ol>
+            <div class="video">
+              <div class="video-box">
+                <div>
+                  <video
+                    controls
+                    muted
+                    loop
+                    playsinline
+                    src="images/PildiLisamineM3.mp4"
+                  ></video>
+                </div>
+              </div>
+              <p class="video-caption">Kõnepidaja pildi lisamine</p>
+            </div>
+            <div class="video">
+              <div class="video-box">
+                <div>
+                  <video
+                    controls
+                    muted
+                    loop
+                    playsinline
+                    src="images/SaateLisamineM3.mp4"
+                  ></video>
+                </div>
+              </div>
+              <p class="video-caption">6. erisaate lisamine veebisaidilt</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="parast">
+          <h2>Pärast koosolekut</h2>
+          <p class="lead">
+            Pane muusika käima ja luba osalejatel röökida ilma saalisolijate
+            segamiseta.
+          </p>
+
+          <div class="card subsection zoom">
+            <h3>Zoomi seadistamine</h3>
+            <ol class="steps">
+              <li>Vajuta mikrofoni ikooni juures oleva ülesnoole peale.</li>
+              <li>
+                Vajuta nupule <strong>Leave computer audio</strong>
+                <div class="image">
+                  <img src="images/zoomafter1.png" />
+                  <p class="image-caption">Audio väljalülitamine Zoomis</p>
+                </div>
+              </li>
+              <li>
+                Luba osalejatel rääkida kasutades nuppu
+                <strong>Allow to unmute</strong> mida kasutasid varem
+                <a href="#zoomi-seadistamine">siin</a>
+                <div class="image">
+                  <img src="images/zoomafter2.png" />
+                  <p class="image-caption">Luba osalejatel rääkida Zoomis</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="probleemid">
+          <h2>Kui midagi ei tööta</h2>
+          <p class="lead">See osa on veel tegemises :)</p>
+
+          <div class="callout">
+            <div class="icon" aria-hidden="true">☎</div>
+            <div>
+              <strong>Kontakt</strong>
+              Gaabriel Ponomarjov <br />
+              +372 5905 1198
+            </div>
+          </div>
+        </section>
+
+        <footer>Viimati uuendatud: 15.10.2026</footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
