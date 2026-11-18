@@ -89,6 +89,21 @@
             </ol>
           </div>
 
+          <div class="card subsection audio-mixer">
+            <h3>Helimikseri seadistamine</h3>
+            <p>
+              Parima helikvaliteedi tagamiseks kontrolli, et helimikser oleks
+              seadistatud nagu pildil.
+            </p>
+            <div class="image mixer-image">
+              <img
+                src="images/mixer.JPEG"
+                alt="Helimikseri seadistus"
+              />
+              <p class="image-caption">Helimikseri seadistus</p>
+            </div>
+          </div>
+
           <div class="card subsection zoom" id="zoomi-seadistamine">
             <h3>Zoomi seadistamine</h3>
             <ol class="steps">
@@ -274,7 +289,7 @@
             segamiseta.
           </p>
 
-          <div class="card subsection zoom">
+          <div class="card subsection">
             <h3>Zoomi seadistamine</h3>
             <ol class="steps">
               <li>Vajuta mikrofoni ikooni juures oleva ülesnoole peale.</li>
@@ -298,9 +313,42 @@
           </div>
         </section>
 
-        <section id="probleemid">
+        <section id="probleemid" class="zoom">
           <h2>Kui midagi ei tööta</h2>
-          <p class="lead">See osa on veel tegemises :)</p>
+          <div class="card subsection displays-not-working">
+            <h3>Kui monitorid ei tööta</h3>
+            <p>
+              Kui monitorid ei tööta, pead BIOS-i sisse minema ja vahetama
+              display'd. Vaata samme allpool kuidas seda teha.
+            </p>
+            <ol class="steps">
+              <li>
+                Taaskäivita arvuti, ja kui ekraan läks mustaks, hakka kohe
+                vajutama F12 nuppu klaviatuuril, kuni must menüü tuleb ette.
+              </li>
+              <li>
+                Vali klaviatuuri nooltega menüüst "BIOS Setup" ja vajuta Enter
+              </li>
+              <li>
+                Mine Video > Primary Display'sse, nagu pildil näidatud.
+                <div class="image">
+                  <img
+                    class="last-image"
+                    src="images/bios1.JPEG"
+                    alt="BIOS-is Video > Primary Display valiku asukoht"
+                  />
+                  <p class="image-caption">BIOS'i seadistamine</p>
+                </div>
+              </li>
+              <li>
+                Vali Intel HD graphics > Vajuta Apply. Kui tuleb mingi sõnum
+                ette, vajuta Okay.
+              </li>
+              <li>
+                Pane Auto tagasi ja vajuta Apply. Võid Arvuti tagasi käivitada.
+              </li>
+            </ol>
+          </div>
 
           <div class="callout">
             <div class="icon" aria-hidden="true">☎</div>
@@ -315,6 +363,28 @@
         <footer>Viimati uuendatud: 15.10.2026</footer>
       </main>
     </div>
+
+    <dialog class="image-lightbox" id="imageLightbox">
+      <div class="lightbox-controls" aria-label="Pildi suurendamine">
+        <button id="zoomOut" type="button" aria-label="Vähenda pilti" title="Vähenda">−</button>
+        <span id="zoomLevel" aria-live="polite">100%</span>
+        <button id="zoomIn" type="button" aria-label="Suurenda pilti" title="Suurenda">+</button>
+        <button id="zoomReset" type="button" aria-label="Lähtesta suurendus" title="Lähtesta">1:1</button>
+      </div>
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        type="button"
+        aria-label="Sulge pilt"
+        title="Sulge pilt"
+      >
+        &times;
+      </button>
+      <div class="lightbox-stage" id="lightboxStage">
+        <img id="lightboxImage" src="" alt="" />
+      </div>
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </dialog>
 
     <script src="script.js"></script>
   </body>
